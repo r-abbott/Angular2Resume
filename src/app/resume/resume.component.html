@@ -1,4 +1,5 @@
 <div *ngIf="resume">
+  <app-profile [profile]="resume.profile" [skills]="resume.skills"></app-profile>
   <app-skills [skillListings]="resume.skills"></app-skills>
   <app-experience [experience]="resume.experience" [skills]="resume.skills"></app-experience>
   <app-education [educationListings]="resume.education"></app-education>  

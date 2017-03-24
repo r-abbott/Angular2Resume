@@ -1,3 +1,10 @@
+.grouping{
+    font-weight:bold;
+}
+
+.skills{
+    display:inline;
+}
 .skills li {
     margin: 0 .5em 0 0;
 }

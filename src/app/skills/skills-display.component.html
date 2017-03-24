@@ -1,13 +1,22 @@
-<div *ngIf="groupByType===true">
-    <div *ngFor="let grouping of getSkillsGroupedByType()">
-        <span>{{grouping.type | capitalize}}</span>
-        <ul class="list-inline skills">
-            <li class="label label-primary" *ngFor='let skill of grouping.skills'>
-                {{skill.name}}
-            </li>
-        </ul>
-    </div>
+<div *ngIf="groupByType===true" class="table-responsive">
+    <table class="table  table-condensed table-striped">
+        <tbody>
+            <tr *ngFor="let grouping of getSkillsGroupedByType()">
+                <td>
+                    <span class="grouping">{{grouping.type | capitalize}}</span>
+                </td>
+                <td>
+                    <ul class="list-inline skills">
+                        <li class="label label-primary" *ngFor='let skill of grouping.skills'>
+                            {{skill.name}}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+    </table>
 </div>
+
 <div *ngIf="groupByType===false">
 <ul class="list-inline skills">
     <li class="label label-primary" *ngFor='let skill of skills'>

@@ -14,6 +14,7 @@ import { DateRangePipe } from './daterange.pipe';
 import { CapitalizePipe } from './capitalize.pipe';
 import { ResumeComponent } from './resume/resume.component';
 import { TagMarkerPipe } from './tagmarker.pipe';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TagMarkerPipe } from './tagmarker.pipe';
     DateRangePipe,
     CapitalizePipe,
     ResumeComponent,
-    TagMarkerPipe
+    TagMarkerPipe,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
